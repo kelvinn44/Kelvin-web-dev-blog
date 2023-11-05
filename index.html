@@ -3,21 +3,79 @@
 <html>
 <head>
     <title>My Web Development Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 </head>
-
-<style>
     
+<style>
+    body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+
+    #grad {
+        background-image: linear-gradient(to bottom right, #076585, #FFFFFF);
+        width: auto;
+        height: auto;
+    }
+    body, html{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .card-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 150px;
+        background-color: #f0f0f0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
 </style>
 
-<body>
-    <header>
-        <h1><b>Home</b></h1>
+<body id="grad">
+    <div class="w3-content" style="max-width:1400px">
+
+    <header class="w3-container w3-center w3-padding-32"> 
+        <h1><b>MY WEB DEVELOPMENT BLOG</b></h1>
+        <p>Welcome to the blog of <span class="w3-tag">Web</span></p>
     </header>
-        
-    <ul>
-        <li><a href="week1.html">Week 1</a></li>
-        <li><a href="week2.html">Week 2</a></li>
-        <li><a href="week3.html">Week 3</a></li>
-    </ul>
+
+    <div class="w3-row">
+
+        <div class="card-grid">
+            <a href="week1.html" class="card">
+                <h2>Week 1</h2>
+            </a>
+            <a href="week2.html" class="card">
+                <h2>Week 2</h2>
+            </a>
+            <a href="week3.html" class="card">
+                <h2>Week 3</h2>
+            </a>
+            <a href="week4.html" class="card">
+                <h2>Week 4</h2>
+            </a>
+            <!-- Add more cards here -->
+        </div>
+
+</div><br>
+</div>
+
 </body>
 </html>
