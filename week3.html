@@ -1,23 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>My Web Development Blog</title>
+    <title>Kelvin's Web Development Blog</title>
 </head>
 
 <style>
-    
+h2{
+  color: red;
+}
+
+/* --- */
+
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  /* font-size: 28px;  Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}    
 </style>
 
 <body>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="week1.html">Week 1</a></li>
-        <li><a href="week2.html">Week 2</a></li>
-        <li><a href="week3.html">Week 3</a></li>
-    </ul>
+    <!-- Side navigation -->
+<div class="sidenav">
+    <a href="index.html">Home</a>
+    <a href="week1.html">Week 1</a>
+    <a href="week2.html">Week 2</a>
+    <a href="week3.html">Week 3</a>
+    <a href="week4.html">Week 4</a>
+    <a href="week5.html">Week 5</a>
+</div>
 
+<!-- Page content -->
+<div class="main">
     <header>
         <h1>Week 3 Web Dev Blog</h1>
     </header>
+    <h2>HTML Forms, Media Queries, Adobe XD</h2>
+
+    <p>I learnt HTML Forms, for instance:</p>
+    <form>
+      Simple Input Box: <input type="text" placeholder="This is a simple input box">
+      <h4>Semantic Textboxes</h4>
+      <p>Simple Input Date: <input type="date"></p>
+      <p>Simple Input Time: <input type="time"></p>
+      <p>Simple Input Color: <input type="color"></p>
+      <p>Simple Input Password: <input type="password"></p>
+      <p>Simple Input Telephone: <input type="tel"></p>
+      <p>Simple Input Email: <input type="email"></p>
+
+      <p>Simple Radio button:</p>
+      <input type="radio" id="hi" name="rb" value="Hi">
+      <label for="hi">Hi</label><br>
+      <input type="radio" id="bye" name="rb" value="Bye">
+      <label for="bye">Bye</label><br>
+
+      <p>Simple Checkbox:</p>
+      <input type="checkbox" id="cb1" name="1" value="1">
+      <label for="cb1"> 1</label><br>
+      <input type="checkbox" id="cb2" name="2" value="2">
+      <label for="cb2"> 2</label><br>
+      <input type="checkbox" id="cb3" name="3" value="3">
+      <label for="cb3"> 3</label><br>
+      <input type="checkbox" id="cb4" name="4" value="4">
+      <label for="cb4"> 4</label><br>
+
+      <p><label for="textareademo">Simple Text Area:</label></p>
+      <textarea id="textareademo" name="textareademo" rows="4" cols="50" placeholder="This is a text area"></textarea>
+      <br>
+      <input type="button" name="btnSubmit" value="Submit">
+    </form>
+
+    <p>Media Query: "@media screen and (min-width: 450px){}" to adapt to different screen sizes.</p>
+    <p>Adobe XD is a tool to create wireframes/prototype.</p>
+</div>
+
 </body>
 </html>
