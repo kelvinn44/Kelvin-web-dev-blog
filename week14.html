@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Week 7 | Kelvin's Web Development Blog</title>
+    <title>Week 14 | Kelvin's Web Development Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/generic.css">
 </head>
@@ -40,7 +40,7 @@
                     <a class="nav-link" href="week6.html">Week 6</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="week7.html">Week 7</a>
+                    <a class="nav-link" href="week7.html">Week 7</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="week8.html">Week 8</a>
@@ -55,7 +55,7 @@
                     <a class="nav-link" href="week13.html">Week 13</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="week14.html">Week 14</a>
+                    <a class="nav-link active" aria-current="page" href="week14.html">Week 14</a>
                 </li>
             </ul>
         </div>
@@ -64,25 +64,39 @@
 
 <!-- Blog Content -->
 <div class="container">
-    <div id="week7" class="blog-post">
+    <div id="week14" class="blog-post">
     <header>
-        <h1><b>Week 7 Web Dev Blog</b></h1>
+        <h1><b>Week 14 (whitespace) Web Dev Blog</b></h1>
     </header>
 
-    <h2>DOM, Event Handling & Validation, and JSON Local Storage</h2>
+    <h2>Lottie</h2>
 
     <ul>
-      <li>I've learnt about DOM (Document Object Model).</li><br>
-      <li>I've learnt about DOM Tree, how to access elements (document.) using the getElementById(); , getElementsByClassName(); , getElementsByTagName(); , querySelector(); , querySelectorAll() , etc.</li><br>
-      <li>I've learnt about event handling like click, element.addEventListener , and Event Object.</li><br>
-      <li>I've also learnt about validation for forms etc.</li><br>
-      <li>Lastly, I've learnt about JSON Local Storage, where they are stored, their format, how to view and retrive them, why they are used, etc.</li>
+      <li>I've learnt what are Lottie, how to use them, and the tools & resources available for them.</li><br>
+      <li>Lottie is a extremely lightweight animation & design, because it's just code.</li><br>
+      <li>Lottie is a great way to perform animations and allow additional interactivity on your site or mobile platforms.</li><br>
+      <li>They are JSON-based animation file format that enables designers to ship animations on
+        any platform as easily as shipping static.</li><br>
+      <li>They are small files that work on any device and can scale up or down without pixelation.</li><br>
+      <li>Lottie was first created by AirBnB: <a href="https://airbnb.design/lottie">https://airbnb.design/lottie</a></li>
     </ul>
+
+    <h2>Lottie Workflow:</h2>
+    <div class="container">
+        <img src="assets/week14/Lottie_Workflow.png" class="img-fluid" alt="Lottie Workflow">
+    </div>
+    <br>
+
+    <h2>This is an example of Lottie Animation:</h2>
+    <dotlottie-player src="https://lottie.host/9ca97f0e-9fb9-423a-936e-f5dd745f3ddb/9XmdFwDzr1.json"
+        background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+    </dotlottie-player>
     </div>
 </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 </body>
 </html>

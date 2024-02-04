@@ -1,63 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
 <head>
-    <title>Kelvin's Web Development Blog</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kelvin's Web Development Blog</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> -->
-</head>
+
+    <style>
+        /* body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif} */
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
     
-<style>
-    /* body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif} */
-    * {
-        font-family: Arial, Helvetica, sans-serif;
+        #grad {
+            background-image: linear-gradient(to bottom right, #076585, #FFFFFF);
+            width: auto;
+            height: auto;
+        }
+        body, html{
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+    
+        .card-grid {
+            display: grid;
+            /* grid-template-columns: repeat(4, 1fr); */
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 150px;
+            background-color: #f0f0f0;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            text-align: center;
+            cursor: pointer;
+        }
+    
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+    
+        @media (max-width: 920px) {
+        .flex-item {
+            /* flex: 0 50%; */
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
-
-    #grad {
-        background-image: linear-gradient(to bottom right, #076585, #FFFFFF);
-        width: auto;
-        height: auto;
-    }
-    body, html{
-        height: 100%;
-        width: 100%;
-        margin: 0;
-    }
-
-    .card-grid {
-        display: grid;
-        /* grid-template-columns: repeat(4, 1fr); */
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 20px;
-        padding: 20px;
-    }
-    .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 150px;
-        background-color: #f0f0f0;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        transition: 0.3s;
-        text-align: center;
-        cursor: pointer;
-    }
-
-    .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    }
-
-    @media (max-width: 920px) {
-    .flex-item {
-        /* flex: 0 50%; */
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-</style>
+    </style>
+</head>
 
 <body id="grad">
     <div class="w3-content" style="max-width:1400px">
@@ -99,9 +98,14 @@
                 <a href="week12.html" class="card">
                     <h2>Week 12</h2>
                 </a>
+                <a href="week13.html" class="card">
+                    <h2>Week 13</h2>
+                </a>
+                <a href="week14.html" class="card">
+                    <h2>Week 14 (whitespace)</h2>
+                </a>
             </div>
         </div><br>
     </div>
-
 </body>
 </html>

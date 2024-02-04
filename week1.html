@@ -1,93 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Week 1 | Kelvin's Web Development Blog</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 1 | Kelvin's Web Development Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      h1 {
+      color: brown;
+      }
+      h2 {
+          color: red;
+      }
+      h3 {
+          color: aqua
+      }
+      h4 {
+          color: pink;
+      }
+      
+      img{
+          width: 250px;
+          height: 250px;
+          border-radius: 50%;
+      }
+      
+      ul{
+          color: purple;
+      }
+      
+      /* --- */
+
+      .navbar {
+        background-color: lightblue !important;
+      }
+
+      .navbar-nav .nav-link {
+        font-weight: semi-bold;
+        color: black;
+      }
+
+      .navbar-nav .nav-link.active {
+        color: grey; 
+      }
+
+      .blog-post {
+        margin-bottom: 50px;
+      }
+      
+      /* .main {
+        margin-left: 140px;
+        padding: 0px 10px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      } */
+      </style>
 </head>
 
-<style>
-* {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-h1 {
-color: brown;
-}
-h2 {
-    color: red;
-}
-h3 {
-    color: aqua
-}
-h4 {
-    color: pink;
-}
-
-img{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-}
-
-ul{
-    color: purple;
-}
-
-/* --- */
-
-.sidenav {
-  width: 130px;
-  position: fixed;
-  z-index: 1;
-  top: 20px;
-  left: 10px;
-  background: #eee;
-  overflow-x: hidden;
-  padding: 8px 0;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #2196F3;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #064579;
-}
-
-.main {
-  margin-left: 140px;
-  padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
-
 <body>
- <!-- Side navigation -->
- <div class="sidenav">
-  <a href="index.html">Home</a>
-  <a href="week1.html">Week 1</a>
-  <a href="week2.html">Week 2</a>
-  <a href="week3.html">Week 3</a>
-  <a href="week4.html">Week 4</a>
-  <a href="week5.html">Week 5</a>
-  <a href="week6.html">Week 6</a>
-  <a href="week7.html">Week 7</a>
-  <a href="week8.html">Week 8</a>
-  <a href="week9.html">Week 9</a>
-  <a href="week12.html">Week 12</a>
-</div>
+<!-- navigation -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="week1.html">Week 1</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="week2.html">Week 2</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="week3.html">Week 3</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="week4.html">Week 4</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="week5.html">Week 5</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="week6.html">Week 6</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="week7.html">Week 7</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="week8.html">Week 8</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="week9.html">Week 9</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="week12.html">Week 12</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="week13.html">Week 13</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="week14.html">Week 14</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
 
 <!-- Page content -->
-<div class="main">
+<!-- <div class="main"> -->
+<div class="container">
+  <div id="week1" class="blog-post">
   <header>
     <h1>Week 1 Web Dev Blog</h1>
     <h2>Intro</h2>
@@ -102,7 +137,11 @@ ul{
     <li>I started coding html and created my very first web page</li>
     <li>I learnt about different html tags eg, h1, p, ol, ul, img, article, section etc</li>
 </ul>
+  </div>
 </div>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
